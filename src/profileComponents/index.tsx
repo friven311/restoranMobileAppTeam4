@@ -8,14 +8,18 @@ import {
   useColorScheme,
   View,
 } from 'react-native'
-import { BotMenu } from './src/profileComponents/Botmenu';
-import {ProfileComponent} from './src/profileComponents/index'
-
-const App = () => {
+import Profile from './Profile';
+import { Links } from './Links';
+import { BotMenu } from './Botmenu';
+export const ProfileComponent = () => {
   return (
     <View style={styles.Wrapper}>
-      <ProfileComponent/>
-      <BotMenu/>
+      <Text style={styles.AppHeader}>
+        Профиль
+      </Text>
+      <Profile/>
+      <Links/>
+        <BotMenu/>
     </View>
     
   );
@@ -40,5 +44,3 @@ const styles = StyleSheet.create({
     height:'100%',
   }
 });
-
-export default App;

@@ -1,16 +1,11 @@
 import React from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
   View,
 } from 'react-native'
 import Profile from './Profile';
 import { Links } from './Links';
-import { BotMenu } from './Botmenu';
 export const ProfileComponent = () => {
   return (
     <View style={styles.Wrapper}>
@@ -19,7 +14,6 @@ export const ProfileComponent = () => {
       </Text>
       <Profile/>
       <Links/>
-        <BotMenu/>
     </View>
     
   );
@@ -41,6 +35,6 @@ const styles = StyleSheet.create({
     display:'flex',
     flexDirection:'column',
     width:'100%',
-    height:'100%',
+    height:'85%',
   }
 });

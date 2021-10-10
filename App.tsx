@@ -1,20 +1,16 @@
 import React from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
   View,
 } from 'react-native'
-import { BotMenu } from './src/profileComponents/Botmenu';
+import { BotMenu } from './src/Botmenu'
 import {ProfileComponent} from './src/profileComponents/index'
+import { Menu } from './src/menu/Menu';
 
 const App = () => {
   return (
     <View style={styles.Wrapper}>
-      <ProfileComponent/>
+      <Menu/>
       <BotMenu/>
     </View>
     
@@ -33,12 +29,13 @@ const styles = StyleSheet.create({
     color: 'black',
   },
   Wrapper: {
-    position:'relative',
-    display:'flex',
-    flexDirection:'column',
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-between',
     width:'100%',
     height:'100%',
-  }
+  },
+
 });
 
 export default App;

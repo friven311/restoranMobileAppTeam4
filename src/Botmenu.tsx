@@ -1,11 +1,7 @@
 import React from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
   View,
   Image,
 } from 'react-native'
@@ -18,15 +14,15 @@ export const BotMenu = () => {
         <View style={styles.Line}/>
         <View style={styles.Wrapper}>
             <View style={styles.SmWrapper}>
-                <Image style={styles.PictStyle}  source={require('../../img/dish.png')}/>
+                <Image style={styles.PictStyle}  source={require('../img/dish.png')}/>
                 <Text>Блюда</Text>
             </View>
             <View style={styles.SmWrapper}>
-                <Image style={styles.PictStyle} source={require('../../img/marketPhoto.png')}/>
+                <Image style={styles.PictStyle} source={require('../img/marketPhoto.png')}/>
                 <Text>Корзина</Text>
             </View>
             <View style={styles.SmWrapper}>
-                <Image style={styles.PictStyle} source={require('../../img/profPhoto.png')}/>
+                <Image style={styles.PictStyle} source={require('../img/profPhoto.png')}/>
                 <Text>Профиль</Text>
             </View>
         </View>
@@ -36,8 +32,8 @@ export const BotMenu = () => {
 
 const styles = StyleSheet.create({
     MainWrapper:{
-        top:'32%'
-    },
+        bottom:10,
+  },
     Line:{
         position:'relative',
         display:'flex',

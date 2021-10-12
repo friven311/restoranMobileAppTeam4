@@ -16,15 +16,15 @@ export const BotMenu = () => {
         <View style={styles.Wrapper}>
             <TouchableOpacity style={styles.SmWrapper} onPress={() => navigation.navigate('Menu')}>
                 <Image style={styles.PictStyle}  source={require('../../img/dish.png')}/>
-                <Text>Блюда</Text>
+                <Text style={styles.SimpText}>Блюда</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.SmWrapper} onPress={() => navigation.navigate('Menu')}>
+            <TouchableOpacity style={styles.SmWrapper} onPress={() => navigation.navigate('MarketMain')}>
                 <Image style={styles.PictStyle} source={require('../../img/marketPhoto.png')}/>
-                <Text>Корзина</Text>
+                <Text style={styles.SimpText}>Корзина</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.SmWrapper} onPress={() => navigation.navigate('Menu')}>
+            <TouchableOpacity style={styles.SmWrapper} onPress={() => navigation.navigate('ProfileComponent')}>
                 <Image style={styles.PictStyle} source={require('../../img/profPhoto.png')}/>
-                <Text>Профиль</Text>
+                <Text style={styles.SimpText}>Профиль</Text>
             </TouchableOpacity>
             
         </View>
@@ -35,6 +35,7 @@ export const BotMenu = () => {
 const styles = StyleSheet.create({
     MainWrapper:{
         bottom:10,
+        backgroundColor:'white',
   },
     Line:{
         position:'relative',
@@ -51,9 +52,13 @@ const styles = StyleSheet.create({
         top:'2%',
         flexDirection:'column',
         alignItems:'center',
+        color: '#000000',
     },
     PictStyle:{
         width: 76,
         height: 76,
+    },
+    SimpText:{
+        color: '#000000',
     }
 });

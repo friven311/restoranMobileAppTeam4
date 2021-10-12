@@ -18,7 +18,6 @@ export const Navigate = () => {
                     <RootStack.Screen
                         name="ProfileComponent"
                         component={ProfileComponent}
-                        options={{title:'ProfileComponent'}}
                     />
                     <RootStack.Screen
                         name="MarketMain"

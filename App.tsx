@@ -19,16 +19,6 @@ export const App = () => {
 };
 
 const styles = StyleSheet.create({
-  AppHeader: {
-    position: 'relative',
-    display: 'flex',
-    left: '35%',
-    top: 30,
-    fontWeight: 'normal',
-    fontSize: 24,
-    lineHeight: 33,
-    color: 'black',
-  },
   Wrapper: {
     flex: 1,
     flexDirection: 'column',

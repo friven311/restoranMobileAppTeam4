@@ -23,12 +23,12 @@ export const MarketMain = () => {
             <View >
                 <View style={styles.TypeContainer}>
                     <Image source={require('../../img/car.png')}/>
-                    <Text>  Доставка заказа</Text>
+                    <Text style={styles.SimpText}>  Доставка заказа</Text>
                 </View>
             </View>
         </View>
         <View style={styles.FinalCheckCont}>
-            <Text>Итоговая сумма: 18 BYN</Text>
+            <Text style={styles.SimpText}>Итоговая сумма: 18 BYN</Text>
             <Text style={styles.But}>Далее</Text>
         </View>
     </View>
@@ -87,9 +87,14 @@ const styles = StyleSheet.create({
         borderRadius:40,
         backgroundColor:'#99fda9',
         borderColor:'green',
+        color: '#000000',
     },
     TextType:{
         width:80,
+        color: '#000000',
+    },
+    SimpText:{
+        color: '#000000',
     }
 });
 

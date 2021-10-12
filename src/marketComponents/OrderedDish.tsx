@@ -15,7 +15,7 @@ export const OrderedDish = () => {
                     <View style={styles.Wrapper}>
                         <View style={styles.TextContainer}>
                             <Text style={styles.StyledText}>Английский завтрак</Text>
-                            <Text>18 BYN</Text>
+                            <Text style={styles.SimpText}>18 BYN</Text>
                         </View>
                         <View style={styles.CountCont}>
                             <Image source={require('../../img/minus.png')}/>
@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
     },
     StyledText: {
         paddingRight:15,
+        color: '#000000',
     },
     StyledCount: {
         fontSize: 36,
@@ -76,13 +77,18 @@ const styles = StyleSheet.create({
         borderRadius:10,
         borderWidth:  1,
         marginBottom:20,
+        color: '#000000',
     },
     AddText:{
         textAlign:'center',
         width:190,
         borderRadius:10,
         borderWidth:  1,
+        color: '#000000',
     },
+    SimpText:{
+        color: '#000000',
+    }
 });
 
 

@@ -54,12 +54,14 @@ const styles = StyleSheet.create({
         fontSize: 22,
         lineHeight: 26,
         paddingBottom:15,
+        color: '#000000',
     },
     TextStylePol:{
         fontStyle: 'normal',
         fontWeight: 'normal',
         fontSize: 22,
         lineHeight: 26,
+        color: '#000000',
     },
     BoxWrapper:{
       flexDirection:'row'
